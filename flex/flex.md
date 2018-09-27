@@ -26,9 +26,10 @@
 
 > ## flex 元素属性
 > * flex-grow 当有多余空间时，元素的放大比例
->> 整数1、2、3...
+>> 整数0(默认值)、1、2、3...
 > * flex-shrink 当空间不足时，元素的缩小比例
+>> 整数1(默认值)、2、3...
 > * flex-basis 元素在主轴上占据的空间
 > * flex grow、shrink、basis的简写
 > * order 元素排列顺序
-> * align-self 元素自身对齐方式
+> * align-self 元素自身对齐方式 (交叉轴)
