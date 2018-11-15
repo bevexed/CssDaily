@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selection测试</title>
+    <style>
+        p::selection{
+            background: red;
+            color: wheat;
+        }
+        input[type='text']::selection{
+            background: gray;
+            color: #fff;
+        }
+        td::selection{
+            background: green;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<p>123</p>
+<input type="text" value="123">
+<table>
+    <tr>
+        <td>123</td>
+    </tr>
+</table>
+</body>
+</html>
