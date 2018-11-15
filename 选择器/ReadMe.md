@@ -78,3 +78,9 @@
     * indeterminate 当页面打开时，一组单选框中没有任何一个单选框被设定为选取状态时整组单选框的样式。
 * E::selection
     * 指定元素被选中时的样式[案例](https://github.com/bevexed/css_learning/blob/master/%E9%80%89%E6%8B%A9%E5%99%A8/selection.html)
+* E:invalid、E:valid
+    * invalid 当元素内容不能通过HTML5通过使用元素如require、pattern等属性所指定的检查或元素内容不符合元素的规定格式（例如通过使用type属性为Email的input元素来限定元素内容必须为有效的Email格式）时的样式。
+    * valid   当元素内容能通过HTML5通过使用元素如require、pattern等属性所指定的检查或元素内容不符合元素的规定格式（例如通过使用type属性为Email的input元素来限定元素内容必须为有效的Email格式）时的样式。
+* E:required、E:optional
+    * required 指定允许使用required属性，且已经指定了required属性的input元素、select元素以及textarea元素的样式。
+    * optional 指定允许使用required属性，且未指定required属性的input元素、select元素以及textarea元素的样式。

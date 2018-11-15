@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>required</title>
+    <style>
+        input[type="text"]:required{
+            border: 3px solid red;
+            background: black;
+        }
+        input[type="text"]:optional{
+            border: 1px solid black;
+            background: red;
+        }
+        input
+    </style>
+</head>
+<body>
+<label for="text"></label>
+<input type="text" id="text" required placeholder="123">
+<input type="text" id="1" placeholder="123">
+</body>
+</html>
