@@ -77,4 +77,4 @@
     * default 打开时默认处于选取状态的样式
     * indeterminate 当页面打开时，一组单选框中没有任何一个单选框被设定为选取状态时整组单选框的样式。
 * E::selection
-    * 指定元素被选中时的样式[案例](../selection.html)
+    * 指定元素被选中时的样式[案例](https://github.com/bevexed/css_learning/blob/master/%E9%80%89%E6%8B%A9%E5%99%A8/selection.html)
