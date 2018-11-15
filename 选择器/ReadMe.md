@@ -83,4 +83,4 @@
     * valid   当元素内容能通过HTML5通过使用元素如require、pattern等属性所指定的检查或元素内容不符合元素的规定格式（例如通过使用type属性为Email的input元素来限定元素内容必须为有效的Email格式）时的样式。
 * E:required、E:optional
     * required 指定允许使用required属性，且已经指定了required属性的input元素、select元素以及textarea元素的样式。
-    * optional 指定允许使用required属性，且未指定required属性的input元素、select元素以及textarea元素的样式。
+    * optional 指定允许使用required(`元素默认状态为optional`)属性，且未指定required属性的input元素、select元素以及textarea元素的样式。
