@@ -84,3 +84,18 @@
 * E:required、E:optional
     * required 指定允许使用required属性，且已经指定了required属性的input元素、select元素以及textarea元素的样式。
     * optional 指定允许使用required(`元素默认状态为optional`)属性，且未指定required属性的input元素、select元素以及textarea元素的样式。
+* E:in-range、E:out-of-range
+    * in-range 指定元素的有效值被限定在一定的范围之内(通常通过min和max属性值来限定),且输入值在该范围时使用的样式。
+    * out-of-range 指定元素的有效值被限定在一定的范围之内(通常通过min和max属性值来限定),且输入值`不`在该范围时使用的样式。
+
+## 通用兄弟元素选择器
+ <子元素> ~ <子元素之后的同级兄弟元素>
+
+
+## css选择器权重
+* 第一等：代表内联样式，如: style=””，权值为1000。
+* 第二等：代表ID选择器，如：#content，权值为0100。
+* 第三等：代表类，伪类和属性选择器，如.content，权值为0010。
+* 第四等：代表类型选择器和伪元素选择器，如div p，权值为0001。
+* 通配符、子选择器、相邻选择器等的。如*、>、+,权值为0000。
+* 继承的样式没有权值。
