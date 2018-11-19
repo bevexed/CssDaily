@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>increment</title>
+    <style>
+        h1{
+            counter-increment: aaa;
+        }
+        h1:before{
+            content: counter(aaa)'.';
+        }
+    </style>
+</head>
+<body>
+<h1>大标题</h1>
+<p>文字</p>
+<h1>大标题</h1>
+<p>文字</p>
+<h1>大标题</h1>
+<p>文字</p>
+</body>
+</html>
