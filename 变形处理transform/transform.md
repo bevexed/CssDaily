@@ -16,6 +16,7 @@
 * transform: rotate(45deg) translate(300px,400px) scale(1.5);
 
 ## transform-origin
+*  默认值 50% 50% 0
 *  修改变形的基准点，采用‘基准点在元素水平方向上的位置(left、center、right)，基准点在元素垂直方向上的位置’（top、center、bottom）
 *  transform-origin:20% 40%;
 *  transform-origin:left top;
@@ -38,12 +39,16 @@
     * translateZ
 ## 变形矩阵 `matrix`
  * ### 计算2D变形
-    * $\left|
-      \begin{array}{lcr}
-      a & b & c \\
-      d & e & f
-      \end{array}
-      \right|$
+    * matrix(a,b,c,d,e,f) <br>
+    > <pre>
+    > |a  c  e| <br>
+    > |b  d  f| <br>
+    > |0  0  1| <br>
+    >
+    > |a  c  e|   | x |   | ax + cy + e |  <br>
+    > |b  d  f| * | y | = | bx + dy + f |  <br>
+    > |0  0  1|   | 1 |   | 0  +  0 + 1 |  <br>
+    > </pre>
 
 
 
