@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D-Rotate</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="div">事例</div>
+<input type="button" value="绕X轴旋转" onclick="rotateX()">
+<input type="button" value="绕Y轴旋转" onclick="rotateY()">
+<input type="button" value="绕Z轴旋转" onclick="rotateZ()">
+</body>
+<script>
+    let n, rotINT, rotXINT, rotYINT, rotZINT
+    let div = document.querySelector('#div')
+
+    function rotateX() {
+        n = 0;
+        clearInterval(rotXINT)
+        rotXINT = setInterval(startXRotate, 10)
+    }
+
+    function startXRotate() {
+        n++;
+        div.style.transform = `rotateX(${n}deg)`
+        if (n === 180) {
+            clearInterval(rotXINT)
+            n = 0
+        }
+        console.log(n);
+    }
+
+    function rotateY() {
+        n = 0;
+        clearInterval(rotYINT)
+        rotYINT = setInterval(startYRotate, 10)
+    }
+
+    function startYRotate() {
+        n++;
+        div.style.transform = `rotateY(${n}deg)`
+        if (n === 180) {
+            clearInterval(rotYINT)
+            n = 0
+        }
+    }
+
+    function rotateZ() {
+        n = 0;
+        clearInterval(rotZINT)
+        rotZINT = setInterval(startZRotate, 10)
+    }
+
+    function startZRotate() {
+        n++;
+        div.style.transform = `rotateZ(${n}deg)`
+        if (n === 180) {
+            clearInterval(rotZINT)
+            n = 0
+        }
+    }
+
+</script>
+</html>
