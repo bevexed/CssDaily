@@ -1,0 +1,22 @@
+{
+  "name": "css-daily",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"**\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bevexed/css_learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bevexed/css_learning/issues"
+  },
+  "homepage": "https://github.com/bevexed/css_learning#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}

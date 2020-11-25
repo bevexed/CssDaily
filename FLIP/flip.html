@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FLIP</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul>li{
+      list-style: none;
+    }
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      width: 800px;
+      background: antiquewhite;
+    }
+
+    li{
+      height: 100px;
+      width: 100px;
+      background: aquamarine;
+      margin: 10px;
+    }
+
+    button{
+      padding: 10px 40px;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    body{
+      padding: 0 40px;
+    }
+
+    .btns{
+      display: flex;
+      position: fixed;
+      right: 100px;
+      bottom: 200px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+  </ul>
+
+  <div class="btns">
+    <button onclick="add()">+</button>
+    <button onclick="reduce()">-</button>
+  </div>
+
+</body>
+
+<script>
+    const list = [];
+
+    const init = () =>{
+      const ul = document.querySelector('ul')
+      let child = ul.lastElementChild;
+      while (child) {
+        ul.removeChild(child);
+        child = ul.lastElementChild;
+      }
+      const _list = list.forEach((item)=>{
+        const li = document.createElement('li')
+        li.innerHTML = item
+        ul.append(li)
+      })
+
+    }
+
+
+
+   const add = () =>{
+      const item = (Math.random()*10).toFixed(1)
+      list.push(item)
+      init()
+   }
+
+   const reduce = () =>{
+      const length = list.length;
+      const random = Math.floor( Math.random() * length)
+      list.splice(random,1)
+      init()
+   }
+
+
+
+
+    window.onload = init
+
+</script>
+
+</html>
